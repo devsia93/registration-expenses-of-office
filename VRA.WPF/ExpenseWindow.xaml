@@ -1,0 +1,30 @@
+﻿<Window x:Class="VRA.WPF.ExpenseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VRA.WPF"
+        mc:Ignorable="d"
+        Title="ExpenseWindow" Height="225" Width="300" MinWidth="300" MinHeight="225" MaxWidth="300" MaxHeight="225" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="ID Worker" HorizontalAlignment="Left" Margin="11,8,0,0" VerticalAlignment="Top"/>
+        <Label Content="ID Type" HorizontalAlignment="Left" Margin="11,34,0,0" VerticalAlignment="Top"/>
+        <Label Content="Description" HorizontalAlignment="Left" Margin="11,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sum" HorizontalAlignment="Left" Margin="11,86,0,0" VerticalAlignment="Top"/>
+        <Label Content="Date" HorizontalAlignment="Left" Margin="11,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbIdWorker" Grid.Column="1" Height="23" Margin="1,12,110,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbDescription" Grid.Column="1" Height="23" Margin="1,64,9,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="tbSum" Grid.Column="1" Height="23" Margin="1,90,9,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <Button x:Name="btnSave" Content="Save
+" HorizontalAlignment="Left" Margin="35,163,0,0" VerticalAlignment="Top" Width="75" Click="BtnSave_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" Grid.Column="1" HorizontalAlignment="Left" Margin="35,163,0,0" VerticalAlignment="Top" Width="75" Click="BtnCancel_Click"/>
+        <DatePicker x:Name="dpDate" Grid.Column="1" HorizontalAlignment="Left" Margin="24,113,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSearchWorker" Content="Search Worker" Grid.Column="1" HorizontalAlignment="Left" Margin="45,11,0,0" VerticalAlignment="Top" Width="90" Click="btnSearchWorker_Click"/>
+        <ComboBox x:Name="cb_typeID" HorizontalAlignment="Left" Margin="1,36,0,0" VerticalAlignment="Top" Width="35" Grid.Column="1"/>
+
+    </Grid>
+</Window>

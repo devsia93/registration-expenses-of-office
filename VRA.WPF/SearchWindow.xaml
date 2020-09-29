@@ -1,0 +1,48 @@
+﻿<Window x:Class="VRA.WPF.SearchWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VRA.WPF"
+        mc:Ignorable="d"
+        Title="SearchWindow" Height="230.859" Width="414.839" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,-4,-4">
+        <Button x:Name="btn_Search" Content="Search" HorizontalAlignment="Left" Margin="90,174,0,0" Width="75" Height="20" VerticalAlignment="Top" RenderTransformOrigin="0.529,1.95" Click="Btn_Search_Click"/>
+        <Button x:Name="btn_Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="247,174,0,0" Width="75" Height="20" VerticalAlignment="Top" Click="Btn_Cancel_Click"/>
+        <TabControl x:Name="tabControlSearch" HorizontalAlignment="Left" Width="411" Margin="0,0,0,35">
+            <TabItem x:Name="ti_searchWorker" Header="Search Worker">
+                <Grid Background="White" Margin="0,0,-4,0" Height="149" VerticalAlignment="Top">
+                    <Label Content="Name worker" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tb_nameWorker" HorizontalAlignment="Left" Height="23" Margin="130,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="ti_searchDivision" Header="Search Division">
+                <Grid Background="White">
+                    <Label Content="Title division" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tb_titleDivision" HorizontalAlignment="Left" Height="23" Margin="130,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="ti_searchExpense" Header="Search Expense">
+                <Grid Background="White">
+                    <Label Content="ID Consumption" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top"/>
+                    <Label Content="ID Type" HorizontalAlignment="Left" Margin="10,37,0,0" VerticalAlignment="Top"/>
+                    <Label Content="ID Worker" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Date" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tb_IDConsumptionExpense" HorizontalAlignment="Left" Height="23" Margin="130,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                    <TextBox x:Name="tb_IDTypeExpense" HorizontalAlignment="Left" Height="23" Margin="130,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                    <TextBox x:Name="tb_IDWorkerExpense" HorizontalAlignment="Left" Height="23" Margin="130,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                    <DatePicker x:Name="dpDateExpense" HorizontalAlignment="Left" Margin="130,92,0,0" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="ti_searchTypeExpense" Header="Search Type Expense">
+                <Grid Background="White">
+                    <Label Content="ID Type" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Title Expense" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tbIDTypetExpense" HorizontalAlignment="Left" Height="23" Margin="130,11,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                    <TextBox x:Name="tbTitleTypeExpense" HorizontalAlignment="Left" Height="23" Margin="130,38,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+
+</Window>
